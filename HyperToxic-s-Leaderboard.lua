@@ -1,5 +1,5 @@
 htLeaderboard = {}
-htLeaderboard.name = "htLeaderboard"
+htLeaderboard.name = "HyperToxic-s-Leaderboard"
 htLeaderboard.version = 0.1
 
 htLeaderboard.inCombat = false
@@ -59,8 +59,8 @@ function htLeaderboard:Initialize()
 
 	EVENT_MANAGER:RegisterForEvent(self.name, EVENT_PLAYER_COMBAT_STATE, self.OnPlayerCombatState)
 
-	--self.savedVariables = ZO_SavedVars:New("htLeaderboardSavedVariables", 1, nil, {})
-	self.savedVariables = ZO_SavedVars:NewAccountWide("htLeaderboardSavedVariables", 1, nil, {})
+	--self.savedVariables = ZO_SavedVars:New("HyperToxic-s-LeaderboardSavedVariables", 1, nil, {})
+	self.savedVariables = ZO_SavedVars:NewAccountWide("HyperToxic-s-LeaderboardSavedVariables", 1, nil, {})
 
     	htLeaderboardIndicatorBG:SetAlpha(0)
     

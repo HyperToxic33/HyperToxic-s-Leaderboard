@@ -1,4 +1,4 @@
-## Title: |c00FF00HyperToxic's-Leaderboard|r
+## Title: |c00FF00HyperToxic's Leaderboard|r
 ## APIVersion: 100010
 ## SavedVariables: HyperToxic-s-LeaderboardSavedVariables
 ## Version: 0.1
