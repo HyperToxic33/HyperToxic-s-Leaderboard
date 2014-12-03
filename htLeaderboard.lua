@@ -14,6 +14,18 @@ htLeaderboard.boards = {htLeaderboard.WEEKLY, htLeaderboard.HEL_RA_CITADEL, htLe
 
 htLeaderboard.raidLeaderboardData = {}
 
+-- Tooltip hooks
+
+function ZO_FriendsListRowDisplayName_OnMouseEnter(control)
+	local parent = control:GetParent()
+	local data = ZO_ScrollList_GetData(parent)
+	htLeaderboard:ShowTooltip(control, data.characterName)
+end
+
+function ZO_FriendsListRowDisplayName_OnMouseExit(control)
+    ClearTooltip(InformationTooltip)
+end
+
 function ZO_GroupListRow_OnMouseEnter(control)
 	local data = ZO_ScrollList_GetData(control)
 	htLeaderboard:ShowTooltip(control, data.characterName)
@@ -28,14 +40,12 @@ function ZO_GuildRosterRowDisplayName_OnMouseEnter(control)
 	local data = ZO_ScrollList_GetData(parent)
 	htLeaderboard:ShowTooltip(control, data.characterName)
 end
+
 function ZO_GuildRosterRowDisplayName_OnMouseExit(control)
 	ClearTooltip(InformationTooltip)
 end
 
-function findLBPlayer(text)
-	d("Leaderboard data for " .. text)
-	htLeaderboard:DisplayRaidLeaderboardDataForName(text)
-end
+-- End tooltip hooks
 
 -- Initialize our addon
 function htLeaderboard.OnAddOnLoaded(eventCode, addOnName)
@@ -120,7 +130,7 @@ function htLeaderboard:ShowTooltip(control, characterName)
 		end
 	end
 	
-	InitializeTooltip(InformationTooltip, control, BOTTOM, 0, 0)
+	InitializeTooltip(InformationTooltip, control, BOTTOM, 0, 0, BOTTOMLEFT)
 	SetTooltipText(InformationTooltip, tooltip)
 end
 
