@@ -1,0 +1,24 @@
+<GuiXml>
+  <Controls>
+    <TopLevelControl name="htLeaderboardIndicator" mouseEnabled="true" movable="true" clampedToScreen="true">
+      <Dimensions x="300" y="170" />
+      
+
+      <OnMoveStop>
+        htLeaderboard.OnIndicatorMoveStop()
+      </OnMoveStop>
+      
+      <Controls>
+        <Backdrop name="$(parent)BG" inherits="ZO_DefaultBackdrop" />
+
+        <Label name="$(parent)W" font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="Weekly" />
+        <Label name="$(parent)HRC" font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="Hel Ra Citadel" />
+        <Label name="$(parent)AA" font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="Aetherian Archive" />
+        <Label name="$(parent)SO" font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="Sanctum Ophidia" />
+        <Label name="$(parent)DSA" font="ZoFontWinH5" color="FFFFFF" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" text="Dragonstar Arena (Veteran)" />
+
+      </Controls>
+    </TopLevelControl>
+  </Controls>
+</GuiXml>
+

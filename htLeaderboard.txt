@@ -1,0 +1,8 @@
+## Title: |cEFEBBEhtLeaderboard|r
+## APIVersion: 100010
+## SavedVariables: htLeaderboardSavedVariables
+## Version: 0.1
+## Author: HyperToxic
+
+htLeaderboard.xml
+htLeaderboard.lua
