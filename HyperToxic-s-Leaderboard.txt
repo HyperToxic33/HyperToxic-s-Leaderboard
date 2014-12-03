@@ -1,0 +1,8 @@
+## Title: |c00FF00HyperToxic's-Leaderboard|r
+## APIVersion: 100010
+## SavedVariables: HyperToxic-s-LeaderboardSavedVariables
+## Version: 0.1
+## Author: HyperToxic
+
+HyperToxic-s-Leaderboard.xml
+HyperToxic-s-Leaderboard.lua
